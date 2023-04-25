@@ -92,14 +92,32 @@ aside ~ h5 {
 
 /* unvisited link */
 
+.selectors a:link {
+    color: red;
+}
 /* visited link */
+
+.selectors a:visited {
+    color: green;
+}
 
 /* mouse over link */
 
+.selectors a:hover {
+    color: white;
+    background-color: black;
+}
+
 /* selected link */
 
+.selectors a:active {
+    color: blue;
+    background-color: red;
+}
 
-
+div.child-example p:nth-child(2) {
+    background-color: blueviolet;
+}
 
 /* Pseudo Elements - used to style specified parts of an element */
 /* selector::psuedo-element{} */
