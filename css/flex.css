@@ -1,0 +1,31 @@
+body {
+    background-color: navy;
+}
+
+.container-1 {
+    border: 5px solid white;
+    height: 500px;
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap-reverse; */
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#child1 {
+    border: 2px solid red;
+    order: 1;
+    flex-grow: 4;
+    align-self: flex-end;
+}
+
+#child2 {
+    border: 2px solid yellow;
+    order: 1;
+    flex-grow: 1;
+}
+
+.container-1 > img {
+    flex-grow: 1;
+}
